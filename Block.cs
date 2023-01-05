@@ -55,6 +55,16 @@ public class Block
 		return new Vector3Int(x, y, z);
 
 	}
+
+	public bool IsActive
+	{
+
+		get { return blockObject.activeSelf; }
+		set { blockObject.SetActive(value); }
+
+	}
+
+
 	Vector3Int position
 	{
 
